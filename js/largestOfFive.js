@@ -1,4 +1,5 @@
 function findLargest() {
+    debugger;
     var list = [];
     list.push(document.getElementById("num1").value);
     list.push(document.getElementById("num2").value);
@@ -7,7 +8,7 @@ function findLargest() {
     list.push(document.getElementById("num5").value);
     var result = 0;
     for (let i=0;i<list.length;i++) {
-        if (list[i]>result) {
+        if (parseInt(list[i])>parseInt(result)) {
             result = list[i];
         }
     }
